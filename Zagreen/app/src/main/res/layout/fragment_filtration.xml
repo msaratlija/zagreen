@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:orientation="vertical">
+
+    <!-- zaglavlje -->
+    <RelativeLayout
+        android:id="@+id/title_filtracija_layout"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@drawable/shadow_9patch"
+        android:orientation="horizontal">
+
+        <com.example.marko.zagreen.TextViewPlus
+            android:id="@+id/filtration_text_title"
+            style="@style/Title_text_style_1"
+            android:text="Filtracija"
+            foo:customFont="SinkinSans-400Regular.ttf" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:padding="12dp"
+            android:src="@drawable/arrow_back_mdpi" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title_filtracija_layout">
+    <!-- sadžaj -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_filtracija_layout">
+
+
+        <include
+            android:id="@+id/filtration_adapter_include"
+            layout="@layout/filtration_adapter" />
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

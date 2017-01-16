@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:state_expanded="true">
+        <layer-list>
+            <item
+                android:left="16dp"
+                android:right="30dp"
+                android:top="30dp"
+                android:bottom="0dp"
+                android:drawable="@drawable/arrow_up_mdpi">
+            </item>
+        </layer-list>
+    </item>
+
+
+    <item>
+        <layer-list>
+            <item
+                android:left="16dp"
+                android:right="40dp"
+                android:top="30dp"
+                android:bottom="0dp"
+                android:drawable="@drawable/arrow_down_mdpi">
+            </item>
+        </layer-list>
+    </item>
+
+</selector>

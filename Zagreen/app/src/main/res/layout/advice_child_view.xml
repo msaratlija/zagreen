@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  sadržaj itema u expandble listi -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="@color/blue_advice_color">
+
+    <com.example.marko.zagreen.TextViewPlus
+        android:id="@+id/child_text_view"
+        style="@style/expandable_list_child_style"
+        foo:customFont="SinkinSans-400Regular.ttf"/>
+
+</RelativeLayout>
